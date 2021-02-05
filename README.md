@@ -50,19 +50,24 @@
 Pip / conda
 
 ```bash
-pip install lightning-flash
+pip install lightning-flash -U
 ```
 
-Master
+Pip from source
+
 ```bash
-pip install git+https://github.com/PytorchLightning/lightning-flash.git@master --upgrade
+# with git
+pip install git+https://github.com/PytorchLightning/lightning-flash.git@master
+# OR from an archive
+pip install https://github.com/PyTorchLightning/lightning-flash/archive/master.zip
 ```
 
-Source
-
+From source using `setuptools`
 ``` bash
+# clone flash repository locally
 git clone https://github.com/PyTorchLightning/lightning-flash.git
 cd lightning-flash
+# install in editable mode
 pip install -e .
 ```
 
@@ -386,6 +391,9 @@ Join our [Slack](https://join.slack.com/t/pytorch-lightning/shared_invite/zt-f6b
 
 ## Community
 For help or questions, join our huge community on [Slack](https://join.slack.com/t/pytorch-lightning/shared_invite/zt-f6bl2l0l-JYMK3tbAgAmGRrlNr00f1A)!
+
+## Citations
+We’re excited to continue the strong legacy of opensource software and have been inspired over the years by Caffee, Theano, Keras, PyTorch, torchbearer, and fast.ai. When/if a paper is written about this, we’ll be happy to cite these frameworks and the corresponding authors.
 
 ## License
 Please observe the Apache 2.0 license that is listed in this repository. In addition
